@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zan Rizvi, CPA, CISA | Fractional CFO & Financial Consultant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <style>
+        :root {
+            --primary: #1a5276;
+            --secondary: #2e86c1;
+            --accent: #f39c12;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --text: #333333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: #f5f7f9;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            font-size: 28px;
+            margin-right: 10px;
+            color: var(--primary);
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .contact-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-btn:hover {
+            background-color: var(--secondary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 82, 118, 0.8), rgba(26, 82, 118, 0.8)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            margin-top: 70px;
+        }
+        
+        .hero h2 {
+            font-size: 2.8rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e67e22;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Booking Section */
+        .booking {
+            padding: 80px 0;
+            background-color: #f5f7f9;
+        }
+        
+        .booking-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .booking-info {
+            flex: 1;
+        }
+        
+        .booking-calendar {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .calendar-placeholder {
+            background: #f0f7ff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 20px;
+        }
+        
+        .calendar-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .calendar-btn:hover {
+            background-color: var(--secondary);
+        }
+        
+        /* Experience Section */
+        .experience {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content h4 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content li {
+            margin-bottom: 8px;
+        }
+        
+        .date {
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: #f5f7f9;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Certifications Section */
+        .certifications {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .certification-card {
+            background: var(--light);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .certification-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .certification-logo {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .certification-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .testimonials .section-title h2 {
+            color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-details h4 {
+            color: white;
+            margin-bottom: 5px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: #f5f7f9;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .contact-form textarea {
+            min-height: 150px;
+        }
+        
+        .contact-form button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-form button:hover {
+            background-color: var(--secondary);
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .certifications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .booking-container {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin: 20px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h1>ZAN <span>RIZVI</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="contact-btn">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Zan Rizvi, CPA, CISA</h2>
+            <p>Fractional CFO & Financial Consultant providing strategic financial solutions to drive business growth and efficiency.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">My Services</a>
+                <a href="#booking" class="btn btn-secondary">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>Comprehensive financial solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Fractional CFO Services</h3>
+                    <p>Expert financial leadership on a part-time basis to guide your business strategy and growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Financial Infrastructure</h3>
+                    <p>Building and optimizing finance functions including ERP systems, internal controls, and workflows.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Tax Advisory</h3>
+                    <p>Strategic tax planning and compliance guidance to maximize efficiency and minimize liabilities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Process Automation</h3>
+                    <p>Implementation of systems like Odoo, QuickBooks, and Sage Intacct with automated workflows.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Financial Reporting</h3>
+                    <p>Customized KPI dashboards, budget variance analysis, and cash flow forecasting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Team Development</h3>
+                    <p>Hiring, training, and managing finance teams to foster high-performance cultures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book a Consultation</h2>
+                <p>Schedule a meeting to discuss how I can help your business</p>
+            </div>
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h3>Let's Connect</h3>
+                    <p>I offer personalized consultations to understand your business needs and provide tailored financial solutions.</p>
+                    <p>During our meeting, we can discuss:</p>
+                    <ul>
+                        <li>Your current financial challenges</li>
+                        <li>Opportunities for growth and optimization</li>
+                        <li>Custom solutions for your business</li>
+                        <li>Implementation strategies</li>
+                    </ul>
+                    <p>Use the calendar to book a time that works best for you, or contact me directly via WhatsApp.</p>
+                </div>
+                <div class="booking-calendar">
+                    <h3>Schedule an Appointment</h3>
+                    <p>Select a date and time that works for you</p>
+                    <div class="calendar-placeholder">
+                        <i class="far fa-calendar-alt" style="font-size: 48px; color: var(--primary); margin-bottom: 20px;"></i>
+                        <p>Book a meeting directly through Calendly</p>
+                        <a href="#" class="calendar-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/akmalshafi368'});return false;">
+                            Schedule Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+                <p>My journey in finance and accounting</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Zan Rizvi, CPA & Associates</h3>
+                        <h4>Founder | Fractional CFO</h4>
+                        <span class="date">Jan 2024 - Present</span>
+                        <p>Providing Fractional CFO, bookkeeping, and tax advisory services to businesses across various industries.</p>
+                        <ul>
+                            <li>Built and optimized finance functions for businesses with inadequate financial processes</li>
+                            <li>Advised on tax efficiency, cash flow management, budgeting, and cost optimization</li>
+                            <li>Migrated businesses to Odoo, QuickBooks Online, and Sage Intacct</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Tobacco King</h3>
+                        <h4>Fractional CFO</h4>
+                        <span class="date">Jan 2024 - Present</span>
+                        <p>Financial overhaul for a rapidly expanding retail and distribution business.</p>
+                        <ul>
+                            <li>Built finance department from ground up, hiring and managing team of 7 accountants</li>
+                            <li>Transitioned from cash to accrual accounting</li>
+                            <li>Reimplemented Odoo ERP system and established inventory valuation methods</li>
+                            <li>Reduced salary expenses by 30% while improving efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Rocade Capital</h3>
+                        <h4>Fractional CFO</h4>
+                        <span class="date">Apr 2023 - Dec 2023</span>
+                        <p>Private equity finance company specializing in mass tort litigation financing.</p>
+                        <ul>
+                            <li>Built finance function from ground up implementing Sage Intacct and Ramp Expense Management</li>
+                            <li>Created standardized financial reporting and complex financial models</li>
+                            <li>Led company's first audit process (2023)</li>
+                            <li>Implemented internal controls and streamlined reconciliation processes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Agora Labs Inc. (NASDAQ: API)</h3>
+                        <h4>Director of Finance</h4>
+                        <span class="date">Aug 2021 - Dec 2022</span>
+                        <ul>
+                            <li>Managed NetSuite ERP implementation and budgeting systems</li>
+                            <li>Created financial models and forecasting tools tracking KPIs, MRR, CAC, and LTV</li>
+                            <li>Designed and executed workforce restructuring plan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Roche/Genentech</h3>
+                        <h4>Finance Business Partner | Controller</h4>
+                        <span class="date">Feb 2018 - Mar 2020</span>
+                        <ul>
+                            <li>Managed $1B clinical trials budget</li>
+                            <li>Led variance analysis, FX impact assessments, and strategic financial reporting</li>
+                            <li>Oversaw SAP reconciliations, accruals, and internal controls</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a Certified Public Accountant (CPA) and Certified Information Systems Auditor (CISA) with extensive experience in financial management, accounting operations, and strategic business consulting.</p>
+                    <p>My expertise includes building and optimizing finance functions, implementing ERP systems, developing financial reporting structures, and providing strategic guidance to businesses across various industries.</p>
+                    <p>I specialize in helping businesses transition from informal accounting practices to structured financial systems, improving efficiency, compliance, and profitability.</p>
+                    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Zan Rizvi, CPA, CISA">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Certifications</h2>
+                <p>Professional credentials that demonstrate my expertise</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Certified Public Accountant (CPA)</h3>
+                    <p>Commonwealth of Virginia</p>
+                    <p>Licensed professional accountant with expertise in US GAAP and taxation</p>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Certified Information Systems Auditor (CISA)</h3>
+                    <p>ISACA</p>
+                    <p>Expertise in information systems auditing, control, and security</p>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>QuickBooks ProAdvisor</h3>
+                    <p>Intuit Certified</p>
+                    <p>Certified expert in QuickBooks implementation and optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What my clients say about my work</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Zan transformed our financial operations completely. His expertise in implementing Odoo and building our accounting team was invaluable to our growth."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-details">
+                            <h4>Tobacco King Management</h4>
+                            <p>Retail Business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The financial infrastructure Zan built for our private equity firm was exceptional. He handled our first audit seamlessly and implemented systems that improved our efficiency by 20%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-details">
+                            <h4>Rocade Capital</h4>
+                            <p>Private Equity Firm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"Zan's strategic guidance on tax efficiency and cost optimization helped us navigate a challenging economic period while maintaining growth trajectory."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-details">
+                            <h4>Tech Startup CEO</h4>
+                            <p>Technology Industry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch to discuss how I can help your business</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Falls Church, VA | USA</p>
+                        <p><i class="fas fa-envelope"></i> zan.rizvi@example.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Zan Rizvi, CPA, CISA</h3>
+                    <p>Professional fractional CFO and financial consultant providing strategic financial solutions to businesses.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Fractional CFO</a></li>
+                        <li><a href="#">Financial Infrastructure</a></li>
+                        <li><a href="#">Tax Advisory</a></li>
+                        <li><a href="#">Process Automation</a></li>
+                        <li><a href="#">Financial Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Certified Public Accountant (CPA)</li>
+                        <li>Certified Information Systems Auditor (CISA)</li>
+                        <li>Certified QuickBooks ProAdvisor</li>
+                        <li>Odoo & NetSuite Expert</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Zan Rizvi, CPA, CISA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to initialize Calendly
+        function initCalendly() {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/akmalshafi368',
+                text: 'Schedule a meeting',
+                color: '#0069ff',
+                textColor: '#ffffff',
+                branding: true
+            });
+        }
+        
+        // Load Calendly badge when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if Calendly is loaded
+            if (typeof Calendly !== 'undefined') {
+                initCalendly();
+            } else {
+                // If not loaded yet, try again after a short delay
+                setTimeout(initCalendly, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
